@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6152e0e2-39c7-4748-b227-6598743b6c9e">
+  <producedTypes>
+    <selectionType typeId="ade472f5-21d1-4fef-b12d-8e05ce24e2b4" valueTypeId="5bf7da77-8ca2-4b6c-bf48-03ecdf794fe7"/>
+    <listType typeId="f423bac3-648e-4099-8f81-72a2f3b95a73" valueTypeId="37719a2a-0ed3-4a58-b600-e7866a6245fd"/>
+    <managerType typeId="5cc7e016-72cf-4e72-a57f-7d1f4343aa47" valueTypeId="eda54632-dfcb-4f60-8e29-e7321bdf43b0"/>
+    <recordSetType typeId="3221f23b-2fc7-4bd1-bd5d-dcf696f8bd26" valueTypeId="48b5d7ec-e341-449d-8ea1-ed9749453905"/>
+    <recordKeyType typeId="e22d502f-0006-46bc-b6cd-c44fcbcdee46" valueTypeId="789055b8-aae5-4455-a676-d51b9e8ae2eb"/>
+    <recordType typeId="263b53db-f6b6-47a8-830f-0775e597cf36" valueTypeId="96bbd54c-8f34-469c-90b9-af97344c1611"/>
+    <recordManagerType typeId="8a963432-09cc-45a5-8721-a4a6609fa177" valueTypeId="4c2cbc85-7af5-4ec0-a123-1b7eeb3ec9a6"/>
+  </producedTypes>
+  <name>ПланРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>План работ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПланРабот.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПланРабот.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="afb6239e-7732-47fe-b7b2-9f882ed02838">
+    <name>Выполнена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="b7fa4364-ed2f-4f66-99fd-70fa75b62c60">
+    <name>ДатаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата регистрации</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d0a6457f-b975-4383-b79c-4594a4c37fac">
+    <name>ДатаЗавершения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата завершения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b3b83131-0e86-4bbc-a96e-f0e31e1dbfeb">
+    <name>Приоритет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Приоритет</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.Приоритет.EnumValue.Средний</value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="d88640fd-36bd-45c6-bce4-91c76c9353f1">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3756ab74-d1ea-4457-83c6-cae01efa153a">
+    <name>Работа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работа</value>
+    </synonym>
+    <type>
+      <types>DefinedType.НаименованиеЗадачи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="5c0677f3-517e-4020-a8ce-8e4900d18a9c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d00a199e-fb7b-4c5a-913f-a974642b5f69">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

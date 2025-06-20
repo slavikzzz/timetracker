@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scc:StandaloneContent xmlns:scc="http://g5.1c.ru/v8/dt/scc">
+  <usedItem metadata="Catalog.Проекты"/>
+  <dataExchangeSettings exchangePlan="ExchangePlan.ПланОбменаСМобильнымКлиентом" exchangeOnChangeData="true" exchangePeriod="300" transactionCount="1000"/>
+</scc:StandaloneContent>

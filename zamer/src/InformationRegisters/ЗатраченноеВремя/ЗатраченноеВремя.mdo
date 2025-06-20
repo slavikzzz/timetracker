@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c760584d-c288-4a0c-92e8-80f6cf364b34">
+  <producedTypes>
+    <selectionType typeId="422d5603-8220-4f47-a64d-d6485027f47f" valueTypeId="267ee183-7346-4104-9ae8-0a7a9e9e79c2"/>
+    <listType typeId="d96a459f-5ec0-442b-889e-79553aa1ea5b" valueTypeId="5eaac61b-64a1-4114-8a0d-94428ee94d64"/>
+    <managerType typeId="70394fb6-c6d3-4b81-a9ad-069554cb95bd" valueTypeId="dcf4c42c-cf83-4aad-a356-6359cab4521c"/>
+    <recordSetType typeId="65d348f5-7690-426a-80d3-2a110e4e1807" valueTypeId="d0b62eba-2412-4873-bdcf-eaf1ce4bccba"/>
+    <recordKeyType typeId="d7dcba88-1c9c-44be-ba65-7c88b92684c8" valueTypeId="1f7b4893-0064-4320-9cb4-7ddf9084375f"/>
+    <recordType typeId="2e9f5b36-a163-4ee3-a16d-5687fdec56e9" valueTypeId="652f811f-993b-45bc-9702-c8d1a42209bd"/>
+    <recordManagerType typeId="d5784d1d-8246-4002-9027-8e86bc388989" valueTypeId="edac69bb-a18c-407f-81b1-4f87262107af"/>
+  </producedTypes>
+  <name>ЗатраченноеВремя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Затраченное время</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0d7e0300-98a4-4385-84db-61bdced79cf1">
+    <name>Окончание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5c58f43b-1f03-4e94-9636-7718d0c921a6">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ce08cc40-ea93-4630-808a-e8b64c09643a">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DefinedType.НаименованиеЗадачи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

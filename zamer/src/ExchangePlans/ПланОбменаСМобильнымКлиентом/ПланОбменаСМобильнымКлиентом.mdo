@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2be41b66-7de4-4de4-a27f-3d6daf60caf3" thisNode="2e97ce1e-0fa4-494e-9634-10449e83cda4">
+  <producedTypes>
+    <objectType typeId="645166d3-914a-487f-a320-edede0da026f" valueTypeId="51754bb1-51ff-49dd-8096-514acc533bca"/>
+    <refType typeId="a7b4b005-4495-420f-8f25-531ae6745a75" valueTypeId="263b6503-8fa5-40d6-9fba-d42463792684"/>
+    <selectionType typeId="25ffb4d9-a011-4b12-8a6d-751e310a7a1c" valueTypeId="5f52acd3-b1e8-4aea-9b48-f24b746216f8"/>
+    <listType typeId="5b60080f-1d91-4ca9-bb7f-026809d6a6a6" valueTypeId="e0274727-d2b0-4db9-ab31-0160ddb01ee0"/>
+    <managerType typeId="901472cd-8a16-4ff3-b4a6-5de4a8f35d53" valueTypeId="02b18820-9c1d-4389-8d08-f4b81c13ba2a"/>
+  </producedTypes>
+  <name>ПланОбменаСМобильнымКлиентом</name>
+  <synonym>
+    <key>ru</key>
+    <value>План обмена с мобильным клиентом</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.ПланОбменаСМобильнымКлиентом.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.ПланОбменаСМобильнымКлиентом.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <content>
+    <mdObject>Catalog.Проекты</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ExchangePlan>

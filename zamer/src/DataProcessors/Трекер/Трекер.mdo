@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03048e7f-31da-4435-aa2f-4a250a9d927d">
+  <producedTypes>
+    <objectType typeId="c54d0d27-e230-4fb0-9510-c52329fd5192" valueTypeId="18713a2c-88f0-4cb0-a070-6de640bc8233"/>
+    <managerType typeId="619fd8a0-4114-4463-ad41-8e7ae236750f" valueTypeId="c69ef869-ee96-429c-9af8-16c650f1e941"/>
+  </producedTypes>
+  <name>Трекер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Трекер</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Трекер.Form.Форма</defaultForm>
+  <forms uuid="f9de2d11-bd64-4da2-9215-647e9c0f363a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

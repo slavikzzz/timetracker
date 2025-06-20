@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1560698c-e1de-42b5-9762-5613c0a45482">
+  <name>Трекер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Трекер</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ЗатраченноеВремя</content>
+  <content>DataProcessor.Трекер</content>
+  <content>Enum.Приоритет</content>
+  <content>InformationRegister.ПланРабот</content>
+  <content>Report.ОтчетОВремени</content>
+  <content>Catalog.Проекты</content>
+</mdclass:Subsystem>
